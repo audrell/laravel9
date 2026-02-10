@@ -1,8 +1,16 @@
 @extends('layouts.main')
 
 @section('container')
-
     <h1 class="mb-5">{{ $title }}</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form action="/posts">
+                 
+            </form>
+        </div>
+    </div>
+
 
     @if ($posts->count())
         <div class="card mb-3">
@@ -13,15 +21,15 @@
                 <h5 class="card-title"><a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">{{ $posts[0]->title }}</a></h5>
                 <p>
                     <small class="text-muted">
-                    By. 
+                    By.
                     <a href="/authors/{{ $posts[0]->author->username }}" class="text-decoration-none">{{ $posts[0]->author->name }}
-                    </a> 
+                    </a>
 
                     in
-                
+
                     <a href="/categories/{{ $posts[0]->category->slug }}" class="text-decoration-none">
                     {{ $posts[0]->category->name }}
-                    </a> 
+                    </a>
                     {{ $posts[0]->created_at->diffForHumans() }}
                     </small>
                 </p>
@@ -32,9 +40,7 @@
 
             </div>
         </div>
-    @else
-        <p class="text-center fs-4"> No post found. </p>
-    @endif
+
 
     <div class="container">
         <div class="row">
@@ -50,10 +56,10 @@
                         <h5 class="card-title">{{ $post->title}}</h5>
                         <p>
                             <small class="text-muted">
-                            By. 
-                            <a href="/authors/{{ $post->author->username }}" 
+                            By.
+                            <a href="/authors/{{ $post->author->username }}"
                                 class="text-decoration-none">{{ $post->author->name }}
-                            </a> 
+                            </a>
 
                             {{ $post->created_at->diffForHumans() }}
                             </small>
@@ -67,4 +73,8 @@
         </div>
     </div>
 
-@endsection 
+ @else
+        <p class="text-center fs-4"> No post found. </p>
+    @endif
+
+@endsection

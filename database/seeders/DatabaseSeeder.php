@@ -37,6 +37,11 @@ class DatabaseSeeder extends Seeder
             'slug' => 'web-programming',
         ]);
 
+          Category::create([
+            'name' => 'Web Design',
+            'slug' => 'web-design',
+          ]);
+
         Category::create([
             'name' => 'Personal',
             'slug' => 'personal',
@@ -48,56 +53,56 @@ class DatabaseSeeder extends Seeder
             'title' => 'Judul Pertama',
             'slug' => 'judul-pertama',
             'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur 
-            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum 
-            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam 
-            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem 
-            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo 
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur
+            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum
+            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam
+            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem
+            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo
             temporibus ducimus accusamus voluptate debitis! Nihil, laudantium repellendus!',
             'category_id' => 1,
-            'user_id' => 1, 
+            'user_id' => 1,
         ]);
 
         Post::create([
             'title' => 'Judul Kedua',
             'slug' => 'judul-kedua',
             'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur 
-            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum 
-            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam 
-            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem 
-            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo 
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur
+            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum
+            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam
+            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem
+            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo
             temporibus ducimus accusamus voluptate debitis! Nihil, laudantium repellendus!',
             'category_id' => 1,
-            'user_id' => 1, 
+            'user_id' => 1,
         ]);
 
         Post::create([
             'title' => 'Judul Ketiga',
             'slug' => 'judul-ketiga',
             'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur 
-            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum 
-            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam 
-            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem 
-            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo 
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur
+            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum
+            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam
+            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem
+            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo
             temporibus ducimus accusamus voluptate debitis! Nihil, laudantium repellendus!',
             'category_id' => 2,
-            'user_id' => 1, 
+            'user_id' => 1,
         ]);
 
         Post::create([
             'title' => 'Judul Keempat',
             'slug' => 'judul-keempat',
             'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur 
-            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum 
-            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam 
-            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem 
-            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo 
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus maxime quidem beatae saepe. Non eveniet possimus, consequatur
+            laborum illum necessitatibus ad explicabo perferendis delectus fugiat commodi nulla quisquam? Inventore, cupiditate voluptas aperiam modi nostrum
+            temporibus dolorum laudantium tenetur expedita illo animi recusandae quae ratione consectetur doloribus quaerat eveniet dolore velit veritatis? Veniam
+            sit quaerat voluptatem dolorum voluptate! Minus, commodi quisquam sequi harum quis nobis maiores aspernatur fugiat? Odit ad asperiores vitae! Quod dolorem
+            perferendis, reprehenderit voluptatibus molestias quos dolores cumque tempore saepe praesentium sint laborum, accusantium modi. Nihil dicta distinctio, quo
             temporibus ducimus accusamus voluptate debitis! Nihil, laudantium repellendus!',
             'category_id' => 2,
-            'user_id' => 2, 
+            'user_id' => 2,
         ]); */
 
     }

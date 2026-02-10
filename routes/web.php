@@ -21,31 +21,33 @@ use App\Models\User;
 // Halaman index nya ==> ketika pertama kali dibuka
 Route::get('/', function () {
     return view('home', [
-        "title"=>"Home"
+        "title"=>"Home",
+        "active"=>"home"
     ]);
-});
+})->name('home.index');
 
 Route::get('/about', function () {
     return view('about', [
         "title"=>"About",
-        "name"=>"Farel Ferdyawan",
-        "email"=>"ferdy.transafe@gmail.com",
-        "image"=>"ferdybatik.jpeg"
-    ]); 
-});
+        "name"=>"WPD | audrel qiano mirza hakim",
+        "email"=>"audrel.transafe@gmail.com",
+        "image"=>"audrel4.jpg",
+    ]);
+})->name('about.index');
 
 // Halaman Banyak Post ==> index post nya
-Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 
 // Halaman Single Post ==> satu per-satu post nya
-Route::get('posts/{post:slug}', [PostController::class, 'show']);
+Route::get('posts/{post:slug}', [PostController::class, 'show'])->name('posts.show');
 
 Route::get('/categories', function() {
     return view('categories', [
         'title' => 'Post Categories',
-        'categories' => Category::all()
+        'active' => 'categories',
+       'categories' => Category::all()
     ]);
-});
+})->name('categories.index');
 
 Route::get('/categories/{category:slug}', function(Category $category) {
     return view('posts', [
